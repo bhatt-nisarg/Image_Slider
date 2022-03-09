@@ -25,6 +25,8 @@ public class ViewFliper extends AppCompatActivity {
     public void flipper(int image){
         ImageView imageView = new ImageView(this);
         imageView.setBackgroundResource(image);
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+
 
         viewFlipper.addView(imageView);
         viewFlipper.setFlipInterval(4000);  //4 sec

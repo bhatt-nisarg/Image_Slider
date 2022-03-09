@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ViewFliper">
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="8dp">
     <ViewFlipper
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -13,4 +18,5 @@
         android:id="@+id/viewfliper"
         android:layout_margin="20dp"
         />
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>
