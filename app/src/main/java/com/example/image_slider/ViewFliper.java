@@ -3,6 +3,7 @@ package com.example.image_slider;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -26,7 +27,6 @@ public class ViewFliper extends AppCompatActivity {
         ImageView imageView = new ImageView(this);
         imageView.setBackgroundResource(image);
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-
 
         viewFlipper.addView(imageView);
         viewFlipper.setFlipInterval(4000);  //4 sec
